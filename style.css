@@ -1,0 +1,146 @@
+
+
+* {
+    margin: 0em;
+    padding: 0em;
+    width: 100%;
+    text-decoration: none;
+}
+
+/*@media screen and (max-width: 900px) {
+    body {
+        background: red;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    body {
+        background: orange; 
+        flex-direction: column;               
+    }
+}
+
+@media screen and (max-width: 500px) {
+    body {
+        background: green;
+    }
+}*/
+
+@media (max-width: 768px) {
+    .block {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+ul {
+    list-style: none;
+}
+.side {
+    width: 100px;
+    margin: 5px;
+}
+
+.menu a{
+    background: url(button2.png);
+    color: red;
+    padding: 10px;
+    display: block;
+    border: 1px solid #666;
+    border-radius: 0.3em;
+    transition: 0.5s all;
+    height: 0.8em;
+    width: 0.8em;
+}
+
+.menu a:hover {
+    background: #666;
+    padding: 10px 0 10px 20px;
+}
+.menu__list {
+    position: relative;
+}
+.menu__drop {
+    position: absolute;
+    width: 50%;
+    left: 50%;
+    top: -9999em;
+    opacity: 0;
+    border-left: 5px solid transparent;
+    transition: 0.5s opacity;
+}
+.menu__list:hover .menu__drop{
+    opacity: 1;
+    top: 0;
+}
+
+div.block-item > input {
+    text-align: left;
+}
+/*.menu__list::after{
+    content: " ";
+    position: absolute;
+    border: 5px solid;
+    border-color: transparent transparent transparent black;
+    top: 1em;
+    right: 0.7em;
+    transition: 0.5s;
+}
+
+.menu__list:hover::after{
+    transform: scaleX(-1);
+}*/
+
+.block {
+    display: inline-flex;
+    justify-content: space-between;
+    flex-wrap: wrap;    
+}
+
+.block-item {
+    background: greenyellow;
+    color: black;
+    padding-top: 0.2em;
+    padding-left: 1em;
+    padding-right: 1em;
+    margin-top: 0em;
+    margin-left: 0em;
+    margin-right: 0em;
+    font-size: 1em;       
+    max-height: 23em;
+    overflow: auto;
+    width: 12em;
+    border: 2px solid green;
+    border-radius: 10px;
+    text-align: center;
+    color: tomato;
+}
+
+.block-item:hover { 
+    background: red;
+    transition: 2s linear;
+}
+
+
+
+img {
+    max-height: 12em;
+}
+
+#botton {
+    width: 8.5em;
+    height: 2.5em;
+    border-bottom: 0.1em solid silver;
+    border-radius: 0.3em;
+    background: rgb(195, 219, 205);
+    margin: 5px;
+}
+
+#bot {
+    width: 2.2em;
+    height: 2.2em;
+    border-bottom: 0.1em solid silver;
+    border-radius: 0.3em;
+    background: rgb(195, 219, 205);
+    margin: 5px;
+}
